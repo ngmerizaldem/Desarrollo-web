@@ -1,6 +1,13 @@
-{% extends "base.html" %}
-{% block title %} Inicio {% endblock %}
-{% block content %}
-    <h2> Bienvenido a desarroollo de app web </h2>
-    <p> Esta es mi pagina inicio </p>
-{% endblock %}
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+</head>
+<body>
+    <h1>Bienvenido a nuestra aplicación Flask</h1>
+    <a href="{{ url_for('usuario_form') }}">Ir al formulario</a>
+</body>
+</html>

@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce0d660e-e7f4-44c7-bb37-cd9dc5eb69b3" name="Changes" comment="llamado de about">
+    <list default="true" id="ce0d660e-e7f4-44c7-bb37-cd9dc5eb69b3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/formulario.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/formulario.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +111,7 @@
       <workItem from="1740406482177" duration="60000" />
       <workItem from="1740406844069" duration="146000" />
       <workItem from="1740591043069" duration="993000" />
-      <workItem from="1740592062677" duration="49000" />
+      <workItem from="1740592062677" duration="160000" />
     </task>
     <task id="LOCAL-00001" summary="manejo de rutas">
       <option name="closed" value="true" />
@@ -125,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740288321434</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="&quot;Primer commit del proyecto Flask&quot;">
+      <option name="closed" value="true" />
+      <created>1740592135377</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740592135377</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,14 +146,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="manejo de rutas" />
     <MESSAGE value="llamado de about" />
-    <option name="LAST_COMMIT_MESSAGE" value="llamado de about" />
+    <MESSAGE value="&quot;Primer commit del proyecto Flask&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Primer commit del proyecto Flask&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/app.py</url>
-          <line>8</line>
+          <line>16</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
