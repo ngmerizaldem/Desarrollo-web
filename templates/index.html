@@ -1,13 +1,51 @@
-<!-- templates/index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Formulario de Datos</title>
 </head>
 <body>
-    <h1>Bienvenido a nuestra aplicación Flask</h1>
-    <a href="{{ url_for('usuario_form') }}">Ir al formulario</a>
+    <h1>Formulario de Datos</h1>
+
+    <!-- Formulario para guardar en TXT -->
+    <form action="/guardar_txt" method="POST">
+        <label for="data">Escribe algo para guardar en TXT:</label>
+        <input type="text" id="data" name="data" required>
+        <button type="submit">Guardar en TXT</button>
+    </form>
+
+    <br>
+
+    <!-- Formulario para guardar en JSON -->
+    <form action="/guardar_json" method="POST">
+        <label for="data">Escribe algo para guardar en JSON:</label>
+        <input type="text" id="data" name="data" required>
+        <button type="submit">Guardar en JSON</button>
+    </form>
+
+    <br>
+
+    <!-- Formulario para guardar en CSV -->
+    <form action="/guardar_csv" method="POST">
+        <label for="data">Escribe algo para guardar en CSV:</label>
+        <input type="text" id="data" name="data" required>
+        <button type="submit">Guardar en CSV</button>
+    </form>
+
+    <br>
+
+    <!-- Formulario para guardar en SQLite -->
+    <form action="/guardar_sqlite" method="POST">
+        <label for="nombre">Escribe el nombre del usuario:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <button type="submit">Guardar en SQLite</button>
+    </form>
+
+    <br>
+
+    <a href="/leer_txt">Leer datos del archivo TXT</a><br>
+    <a href="/leer_json">Leer datos del archivo JSON</a><br>
+    <a href="/leer_csv">Leer datos del archivo CSV</a><br>
+    <a href="/leer_sqlite">Leer usuarios desde SQLite</a>
 </body>
 </html>

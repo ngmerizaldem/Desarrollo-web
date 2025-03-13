@@ -1,14 +1,31 @@
-<!-- templates/resultado.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultado</title>
 </head>
 <body>
-    <h1>¡Bienvenido, {{ nombre }}!</h1>
-    <p>Gracias por ingresar tu nombre. ¡Esperamos que disfrutes nuestra aplicación!</p>
-    <a href="{{ url_for('usuario_form') }}">Volver al formulario</a>
+    <h1>Resultado</h1>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+
+    {% if data %}
+        <h2>Datos desde archivo:</h2>
+        <ul>
+            {% for item in data %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    {% if usuarios %}
+        <h2>Usuarios en SQLite</h2>
+        <ul>
+            {% for usuario in usuarios %}
+                <li>{{ usuario.nombre }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
 </body>
 </html>
