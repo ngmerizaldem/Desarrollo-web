@@ -1,20 +1,25 @@
-<!-- templates/formulario.html -->
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Usuario</title>
-</head>
-<body>
-    <h1>Formulario de Usuario</h1>
-    <form method="POST">
-        {{ form.hidden_tag() }}  <!-- Token CSRF para proteger el formulario -->
-        <div>
-            {{ form.nombre.label }}  <!-- Etiqueta del campo de texto -->
-            {{ form.nombre() }}      <!-- Campo de texto -->
-        </div>
-        <button type="submit">Enviar</button>
-    </form>
-</body>
-</html>
+{% extends "base.html" %}
+ 
+ {% block title %}Lista de Usuarios{% endblock %}
+ 
+ {% block content %}
+     <h2>Lista de Usuarios</h2>
+     <table border="1">
+         <thead>
+             <tr>
+                 <th>ID</th>
+                 <th>Nombre</th>
+                 <th>Correo Electrónico</th>
+             </tr>
+         </thead>
+         <tbody>
+             {% for usuario in usuarios %}
+                 <tr>
+                     <td>{{ usuario.idusuarios }}</td>
+                     <td>{{ usuario.nombre }}</td>
+                     <td>{{ usuario.email }}</td>
+                 </tr>
+             {% endfor %}
+         </tbody>
+     </table>
+ {% endblock %}
